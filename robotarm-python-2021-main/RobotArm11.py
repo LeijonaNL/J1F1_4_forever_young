@@ -11,8 +11,8 @@ for i in range(8):
     robotArm.moveRight()
 for i in range(8):
     robotArm.grab()
-    robotArm.scan()
-    if Color == 'white':
+    color = robotArm.scan()
+    if color == 'white':
         robotArm.moveRight()
         robotArm.drop()
         robotArm.moveLeft()
