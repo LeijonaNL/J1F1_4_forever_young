@@ -15,13 +15,13 @@ for i in range(9):
         for i in range(x):
             robotArm.moveRight()
         robotArm.drop()
-        x = x - 1
+        x -= 1
         for i in range(x):
             robotArm.moveLeft()
     else:
         robotArm.drop()
         robotArm.moveRight()
-        x = x - 1
+        x -= 1
 
 
 

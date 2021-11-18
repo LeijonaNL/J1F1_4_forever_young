@@ -9,7 +9,7 @@ robotArm.speed = 2
 
 for i in range(8):
     robotArm.moveRight()
-for i in range(8):
+for i in range(9):
     robotArm.grab()
     color = robotArm.scan()
     if color == 'white':

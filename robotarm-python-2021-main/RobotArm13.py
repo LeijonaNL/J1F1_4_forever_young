@@ -8,12 +8,9 @@ robotArm.speed = 2
 # Jouw python instructies zet je vanaf hier:
 
 x = 1
-repeat = True
-while repeat:
-    robotArm.grab()
+while robotArm.grab():
     color = robotArm.scan()
     if color == '':
-        repeat = False
     else:
         for i in range(x):
             robotArm.moveRight()
